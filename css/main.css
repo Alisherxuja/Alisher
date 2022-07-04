@@ -56,6 +56,11 @@ html {
   color: rgba(0, 0, 0, 0.6) !important;
 }
 
+.nav li a i {
+  font-size: 35px;
+}
+
+
 /* Hero (intro) section */
 .intro-title {
   font-weight: 800;
@@ -267,5 +272,9 @@ footer a:not(.nav-link) {
 }
 
 .entry-title a {
+  text-decoration: none;
+}
+
+.inisial a{
   text-decoration: none;
 }
