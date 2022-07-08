@@ -116,6 +116,12 @@ img.avatar {
 
 .grid-item {
   padding-bottom: 12px;
+  transition: 0.2s all;
+  
+}
+
+.grid-item:hover {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) !important;
 }
 
 @media (min-width: 48em) {
