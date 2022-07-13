@@ -2,7 +2,7 @@ html,
 body {
   background: #121212;
   overflow-x: hidden;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   color: #fff !important;
 }
 
@@ -32,7 +32,7 @@ a {
 
 .btn {
   box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2) !important;
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.7s ease-in-out !important;
 }
 
 .btn:hover {
@@ -45,17 +45,19 @@ a {
 }
 
 .skills-card {
+  transition: all 0.3s ease-in;
   background: #202020 !important;
   box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);}
 
 .bg-primary {
+  transition: all 0.5s ease-in-out !important;
   background-color: #bb86fc !important;
 }
 
 .card-header {
   background: #202020 !important;
   box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.5 ease-in-out !important;
 }
 
 .card-header, .card:hover {
@@ -66,7 +68,7 @@ a {
   background: rgba(0, 0, 0, 0);
   border: solid 2px #202020 !important;
   box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
 }
 
 .card img {
