@@ -1,6 +1,111 @@
-html, body {
+html,
+body {
+  background: #121212;
   overflow-x: hidden;
   transition: 0.5s ease-in-out;
+  color: #fff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: #fff !important;
+}
+
+#header-nav{
+  background: #202020 !important;
+}
+
+.cover {
+  background: #202020 !important;
+}
+
+#header-nav.fixed-top {
+  background: #202020 !important;
+  box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2) !important;
+
+}
+
+.btn {
+  box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn:hover {
+  box-shadow: 4px 4px 8px 0px rgba(212, 212, 212, 0.4) !important;
+
+}
+
+.grid-item:hover {
+  box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);
+}
+
+.skills-card {
+  background: #202020 !important;
+  box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);}
+
+.bg-primary {
+  background-color: #bb86fc !important;
+}
+
+.card-header {
+  background: #202020 !important;
+  box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card-header, .card:hover {
+ box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.4) !important;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0);
+  border: solid 2px #202020 !important;
+  box-shadow: 4px 4px 8px 0px rgba(160, 160, 160, 0.2);
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card img {
+  opacity: 0;
+}
+
+.avatar {
+  box-shadow: 4px 4px 8px 0px rgba(195, 195, 195, 0.2) !important;
+
+}
+
+.btn {
+  background: #bb86fc !important;
+  border: #bb86fc !important;
+}
+
+.marker:after {
+  content: "";
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -25px;
+  right: -30px;
+  background-image: url("../images/markerDark.svg");
+  background-repeat: no-repeat;
+}
+
+.btn-theme {
+  background-color: #fff; 
+  color: #202020;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+  /* background: url(../images/moon.svg) !important;*/
+  border: none;
+  box-sizing: content-box;
+}
+
+.footer {
+  background: #202020 !important;
 }
 
 /**
@@ -42,7 +147,7 @@ html {
 
 .nav-link {
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .social-nav .nav-link {
@@ -54,7 +159,7 @@ html {
 .nav-link:hover,
 .nav-link:focus,
 .active .nav-link {
-  color: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .nav li a i {
@@ -71,6 +176,7 @@ html {
   0% {
     transform: scale(1, 0);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -80,6 +186,7 @@ html {
   0% {
     transform: scale(1, 0);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -92,10 +199,11 @@ html {
   min-width: 600px;
   transform-origin: top;
   -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-          animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-  background-image: url("../images/wave-bg.svg");
+  animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  background-image: url("../images/wave-bgDark.svg");
   background-position: center;
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
 }
 
 img.avatar {
@@ -118,18 +226,20 @@ img.avatar {
 .grid-item {
   padding-bottom: 12px;
   transition: 0.2s all;
-  
+
 }
 
 .grid-item:hover {
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) !important;
+  box-shadow: 4px 4px 8px 0px rgba(71, 125, 167, 0.2) !important;
 }
 
 @media (min-width: 48em) {
+
   .grid-sizer,
   .grid-item {
     width: 25%;
   }
+
   .grid-item {
     float: left;
     padding: 6px;
@@ -161,13 +271,13 @@ img.avatar {
   left: 0;
   width: 100%;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(29, 29, 29, 0.75);
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);
 }
 
 .portfolio-item figcaption h4 {
-  color: #222;
+  color: #fff;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
@@ -175,7 +285,7 @@ img.avatar {
 }
 
 .portfolio-item figcaption p {
-  color: #444;
+  color: rgb(157, 157, 157);
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0;
@@ -187,7 +297,7 @@ img.avatar {
 
 /* Portolio Caption */
 #bp_container .bp-xc {
-  background: #F6E05E;
+  background: #4200bd !important;
 }
 
 #bp_caption a {
@@ -271,6 +381,7 @@ footer a:not(.nav-link) {
   .marker {
     padding-right: 0;
   }
+
   .marker:after {
     bottom: -30px;
     left: 50%;
@@ -282,23 +393,6 @@ footer a:not(.nav-link) {
   text-decoration: none;
 }
 
-.inisial a{
+.inisial a {
   text-decoration: none;
-}
-
-
-/* DARK MODE */
-
-.dark-mode {
-  color: #fff;
-  background: #373737;
-}
-.btn-theme {
-  background-color: #202020; 
-  color: #fff;
-  border-radius: 4px;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  /* background: url(../images/moon.svg) !important;*/
-  border: none;
-  box-sizing: content-box;
 }
